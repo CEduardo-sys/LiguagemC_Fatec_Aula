@@ -36,7 +36,7 @@ int main ()
 		
 	int quantHomens, quantMulheres, quantCriancas, quantHoras, totPessoas;
 	int pao, lataCerveja, lataRefrigerante, pacoteQueijo;
-	float carnePicanha, carneContra, carneMaminha, carneAsaFrango, carneFraldinha, linguica, horasChurrasco;
+	float carnePicanha, carneContra, carneMaminha, carneAsaFrango, carneFraldinha, linguica, horasChurrasco, carvao;
 		
 	printf("Informe a quantidade de homens: ");
 	scanf("%i", &quantHomens);
@@ -60,7 +60,10 @@ int main ()
 	carneContra = (quantHomens * 0.100) + (quantMulheres * 0.050) + (quantCriancas * 0.100) * (quantHoras / 2);	
 	carneMaminha = (quantHomens * 0.100) + (quantMulheres * 0.050) * (quantHoras / 2);	
 	carneAsaFrango = (quantHomens * 0.100) + (quantMulheres * 0.050) * (quantHoras / 2);	
-	carneFraldinha = (quantHomens * 0.100) + (quantMulheres * 0.050) * (quantHoras / 2);	
+	carneFraldinha = (quantHomens * 0.100) + (quantMulheres * 0.050) * (quantHoras / 2);
+	
+	// carvão 3Kg a cada 3 a 4 horas.
+	carvao =  quantHoras * 1;
 	
 	
 	linguica = (quantHomens * 0.200) + (quantMulheres * 0.100) + (quantCriancas * 0.050) * (quantHoras / 2);
@@ -88,6 +91,9 @@ int main ()
 	printf("\n Terá %.3f Kg de carne tipo asa de frango.", carneAsaFrango);
 	printf("\n Terá %.3f Kg de carne tipo fraldinha.", carneFraldinha);
 	printf("\n ================================================");	
+	
+	printf("\n Terá %.2f Kg de carvão.", carvao);
+	printf("\n ================================================");
 	
 	printf("\n Terá %.3f Kg de linguiça.", linguica);	
 	printf("\n ================================================");
